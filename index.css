@@ -1,0 +1,40 @@
+main {
+    text-align: center;
+}
+
+#profile-pic {
+    border-radius: 100%;
+    width: 450px;
+    height: 450px;
+    transition: transform 1.5s;
+}
+/* use transform to rotate picture. 
+Use object fit: cover; crops picture to fit space intelligently
+use transform: rotate to rotate images when you hover over */
+
+#profile-pic:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 50%;
+}
+
+/* even tho you selected all img the profile pic img does not change because it out ranks */
+
+#language-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 10px;
+    
+}
+
+ul{
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    form {
+        widows: 1000px;
+    }
+}
